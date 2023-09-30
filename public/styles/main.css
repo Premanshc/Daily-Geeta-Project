@@ -1,0 +1,58 @@
+@font-face {
+  font-family: myfont;
+  src: url('../SAMAN___.ttf');
+}
+
+.header{
+  font-family: myfont;
+  font-size: xx-large;
+}
+
+body {
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: relative;
+}
+h1{
+  margin: 0px;
+}
+
+.container {
+  height: 60%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div{
+  text-align: center;
+}
+.verse{
+  font-size: larger;
+  padding: 20px;
+}
+
+.verse_number{
+  font-size: larger;
+  padding: 20px;
+}
+
+.description{
+  font-size: larger;
+  padding: 20px;
+}
+
+.header{
+  padding-top: 3.5%;
+}

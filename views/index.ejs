@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65181d13d1daa60012af0bd4&product=inline-share-buttons&source=platform" async="async"></script>
+
+    <script>
+        const imgs = [];
+
+        imgs[1] = '../images/bg1.jpg';
+        imgs[2] = '../images/bg2.jpg';
+        imgs[3] = '../images/bg3.jpg';
+        imgs[4] = '../images/bg4.jpg';
+        imgs[5] = '../images/bg5.jpg';
+        imgs[6] = '../images/bg6.jpg';
+        imgs[7] = '../images/bg7.jpg';
+        imgs[0] = '../images/bg8.jpg';
+
+        window.onload = function(){
+            const random = Math.floor(Math.random()*imgs.length);
+            document.body.style.backgroundImage = `url(${imgs[random]})`;
+        }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <title>Bhagwat Gita Everyday</title>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Daily Geeta</h1>
+    </div>
+    <div class="container">
+      <div>
+        <h1 class="verse"><%= verse %></h1>
+      </div>
+      <div>
+        <div>
+          <h1 class="verse_number">
+            Chapter: <%= chapter_number %> &nbsp; Verse: <%= verse_number %>
+          </h1>
+        </div>
+        <div>
+          <h1 class="description">Description: <%= description %></h1>
+          <h1 class="description">Description: <%= descriptionHindi %></h1>
+
+        </div>
+      </div>
+      <br><br><br>
+      <div class="sharethis-inline-share-buttons"></div>
+    </div>
+    
+  </body>
+</html>
